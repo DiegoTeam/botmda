@@ -11,7 +11,7 @@ function presence(){
   client.user.setPresence({
     status: "online",
     activity: {
-      name: "ser DIEGO TEAM",
+      name: "DIEGO TEAM",
       type: "PLAYINg"
     }
   });
