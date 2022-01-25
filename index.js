@@ -10,7 +10,7 @@ const Alertas = require("./alertas.js");
 function presence(){
   client.user.setPresence({
     status: "online",
-    activity: {
+    game: {
       name: "DIEGO TEAM",
       type: "PLAYING"
     }
