@@ -4,8 +4,7 @@ const client = new Discord.Client();
 //const Canal = client.channels.find(channel => channel.id === ("『🚨』alertas"));
 require('dotenv').config();
 const Alertas = require("./alertas.js");
-const args = message.content.slice(prefix.length).trim().split();
-const command = args.shift().toLowerCase();
+
 
 function presence(){
   client.user.setPresence({
@@ -31,7 +30,7 @@ client.on("ready", () => {
   });
 
 client.on("message",  (message) => {
-   if(command === "ping") {
+   if(message.content === "ping") {
      message.channel.send("pong");
    }
 });
