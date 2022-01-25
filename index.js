@@ -12,7 +12,7 @@ function presence(){
     status: "online",
     activity: {
       name: "DIEGO TEAM",
-      type: "PLAYINg"
+      type: "PLAYING"
     }
   });
 }
