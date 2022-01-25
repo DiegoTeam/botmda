@@ -4,7 +4,7 @@ const client = new Discord.Client();
 //const Canal = client.channels.find(channel => channel.id === ("『🚨』alertas"));
 require('dotenv').config();
 const Alertas = require("./alertas.js");
-const mention = message.mentions.users.first();
+
 
 
 function presence(){
@@ -36,10 +36,5 @@ client.on("message",  (message) => {
    }
 });
 
-client.on("message",  (message) => {
-  if(message.content === "Buenas!") {
-    message.channel.send("Hola ${mention} como estas?");
-  }
-});
  
  client.login(process.env.token);
