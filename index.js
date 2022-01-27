@@ -4,6 +4,7 @@ const client = new Discord.Client();
 //const Canal = client.channels.find(channel => channel.id === ("『🚨』alertas"));
 require('dotenv').config();
 const Alertas = require("./alertas.js");
+const neoAlertas = require("./neoAlertas");
 
 
 
@@ -29,6 +30,12 @@ client.on("ready", () => {
      message.channel.send(Alertas.patito);
    }
   });
+
+  client.on("message",  (message) => {
+    if(message.content === "!neoAlertas") {
+      message.channel.send(neoAlertas.resultado);
+    }
+   });
 
 client.on("message",  (message) => {
    if(message.content === "ping") {
