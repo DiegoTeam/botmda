@@ -1,5 +1,3 @@
-'use-strict';
-exports.handler = async function(context, variables) {
 var axios = require('axios');
      var config = {
     method: 'get',
@@ -29,11 +27,12 @@ if(resultado.length<1)
   existencia = "false";
 }
 resultado=resultado.join("\n");
+module.exports.resultado = resultado;
 var objresultado={
     existencia:existencia,
     resultado:resultado
 };
+
 return objresultado
 
-module.exports.resultado = resultado;
-};
+
