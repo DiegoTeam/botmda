@@ -33,7 +33,7 @@ client.on("ready", () => {
 
   client.on("message",  (message) => {
     if(message.content === "!neoAlertas") {
-      message.channel.send(neoAlertas.resultado);
+      message.channel.send(neoAlertas.patito2);
     }
    });
 

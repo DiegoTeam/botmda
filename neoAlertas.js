@@ -8,6 +8,8 @@ var axios = require('axios');
     },
     //este es el GET testeadi en postmant
 };
+
+async function patito2(){
 var existencia = "true"
 var response = await axios(config)
 var respuestas = response.data;
@@ -27,12 +29,14 @@ if(resultado.length<1)
   existencia = "false";
 }
 resultado=resultado.join("\n");
-module.exports.resultado = resultado;
+
 var objresultado={
     existencia:existencia,
     resultado:resultado
 };
 
-return objresultado
-
+//return objresultado
+module.exports.patito2 = resultado;
+}
+patito2();
 
