@@ -1,4 +1,4 @@
-/*exports.handler = async function(context, variables) {
+exports.handler = async function(context, variables) {
 
 var config = {
     method: 'post',
@@ -26,4 +26,4 @@ var axios = require('axios');
     
     var response = await axios(config)
 
-}*/
+}
