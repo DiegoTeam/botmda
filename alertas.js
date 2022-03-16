@@ -56,6 +56,7 @@ var arrayToObject = function (resultado) {
 //console.log(arrayToObject(resultado));
 console.log(resultado);
 module.exports.patito = resultado;
+return resultado;
 }
 patito();
 
