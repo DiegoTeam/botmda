@@ -1,10 +1,10 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
+var Discord = require("discord.js");
+var client = new Discord.Client();
 //const mySecret = process.env['token'];
 //const Canal = client.channels.find(channel => channel.id === ("『🚨』alertas"));
 require('dotenv').config();
-const Alertas = require("./alertas.js");
-const neoAlertas = require("./neoAlertas");
+var Alertas = require("./alertas.js");
+var neoAlertas = require("./neoAlertas");
 
 
 
@@ -19,15 +19,14 @@ function presence(){
 }
 
 
-
 client.on("ready", () => {
     console.log("Estoy listo!");
     presence();
  });
  
- client.on("message",  (message) => {
+ client.on("message", async (message) => {
    if(message.content === "!alertas") {
-     message.channel.send(Alertas);
+     message.channel.send(await Alertas);
    }
   });
 
