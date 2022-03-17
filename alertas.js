@@ -58,7 +58,7 @@ console.log(resultado);
 module.exports.patito = patito();
 return resultado;
 }
-
+patito();
 
 
 //type_id==1 => BANER ROJO (alerta)
