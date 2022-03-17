@@ -27,7 +27,7 @@ client.on("ready", () => {
  
  client.on("message",  (message) => {
    if(message.content === "!alertas") {
-     message.channel.send(Alertas.patito);
+     message.channel.send(Alertas);
    }
   });
 

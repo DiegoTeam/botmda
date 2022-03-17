@@ -55,10 +55,9 @@ var arrayToObject = function (resultado) {
 }
 //console.log(arrayToObject(resultado));
 console.log(resultado);
-module.exports.patito = patito();
 return resultado;
 }
-patito();
+module.exports = patito();
 
 
 //type_id==1 => BANER ROJO (alerta)
